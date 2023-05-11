@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raphael Branco</title>
+    <!-- Chamando o css externo (para estilizar a página)-->
+	<link href = "https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel = "stylesheet">
+	<link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sytle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/0f40ec3d2d.js" crossorigin="anonymous"></script>
+	<script src="js/progressbar.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+    <!-- Criando o cabeçalho da página -->
+	<header>
+		<div class = "container" id = "nav-container">
+			<nav class = "navbar navbar-expand-lg fixed-top">
+				<a href = "#" class = "navbar-brand">
+					<img id = "logo" src = "img/logo-raphael-branco.jpg" alt = "logo-raphael"> Raphael Branco
+				</a>
+				<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbar-links" aria-controls = "navbar-links" aria-expanded = "false" aria-label = "Toggle navigation">
+					<span class = "navbar-toggler-icon"></span>
+				</button>
+				<div class = "collapse navbar-collapse justify-content-end" id = "navbar-links">
+					<div class = "navbar-nav">
+						<a class = "nav-item nav-link" id = "home-menu">Home</a>
+						<a class = "nav-item nav-link" id = "sobre-menu">Sobre</a>
+						<a class = "nav-item nav-link" id = "curriculo-menu">Currículo</a>
+                        <a class = "nav-item nav-link" id = "sobre-menu">Projetos</a>
+						<a class = "nav-item nav-link" id = "contact-menu">Contato</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	<!-- Fechando o cabeçalho -->
+	</header>
+    <main>
+        <!-- Carrosel -->
+        <div class="container-fluid">
+            <div id="mainSlider" class="carousel slide" data-ride=" carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainSlider" data-slide-to="1"></li>
+                    <li data-target="#mainSlider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Carrosel Base.png" class="d-block w-100" alt="Meu currículo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Quer conhecer meu currículo?</h2>
+                            <p>Sou um desenvolvedor full stack e estou aqui para me apresentar</p>
+                            <a href="#" class="main-btn">Ver currículo</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Carrosel Base.png" class="d-block w-100" alt="Meus projetos">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Quer saber mais sobre meus projetos?</h2>
+                            <p>Tenho certeza que gostará muito dos projetos que desenvolvi e estou desenvolvendo</p>
+                            <a href="#" class="main-btn">Ver projetos</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Carrosel Base.png" class="d-block w-100" alt="Meu currículo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Entre em contato</h2>
+                            <p>Estou disposto para te atender!</p>
+                            <a href="#" class="main-btn">Contatos</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Sobre -->
+			<div id = "about-area">
+				<div class = "container">
+					<div class = "row">
+						<div class = "col-12">
+							<h3 class = "main-title">Sobre mim</h3>
+						</div>
+						<div class = "col-md-6">
+							<img class = "img-fluid" src = "img/eu.jpg" alt = "Eu">
+						</div>
+						<div class = "col-md-6">
+							<h3 class = "about-title">Quem é Raphael Branco?</h3>
+							<p>#</p>
+							<p>#</p>
+							<p>#</p>
+							<p>#</p>
+							<p>#</p>
+							<p>Minhas características:</p>
+							<ul id = "about-list">
+								<li><i class = "fas fa-check"></i>#</li>
+								<li><i class = "fas fa-check"></i>#</li>
+								<li><i class = "fas fa-check"></i>#</li>
+								<li><i class = "fas fa-check"></i>#</li>
+								<li><i class = "fas fa-check"></i>#</li>
+							</ul>
+							<p>E vamos seguindo...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
