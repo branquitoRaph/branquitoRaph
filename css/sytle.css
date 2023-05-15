@@ -161,3 +161,160 @@ header, .navbar {
 .service-box:hover > i, .service-box:hover > h4 {
     color:#2a93c0;
 }
+
+/* Projetos */
+#projects-area {
+	background-color: #F9F9F9;
+    /*text-align: center;*/
+}
+
+.card-body {
+	text-align: center;
+}
+
+/* Footer*/
+#contact-area {
+    text-align: center;
+}
+
+.contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #12303D;
+}
+
+.contact-box i {
+	color: #444;
+	border: solid 1px #444;
+	border-radius: 50px;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.contact-box p {
+	font-size: 16px;
+}
+
+.contact-title {
+	font-weight: bold;
+	color: #12303D;
+}
+
+#msg-box p {
+	font-size: 22px;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+	margin-bottom: 15px;
+	border-radius: 0;
+}
+
+#contact-form .main-btn {
+	width: 200px;
+	height: 60px;
+	background-color: #353a3d;
+}
+
+#contact-form .main-btn:hover {
+	color: #65DAF9;
+}
+
+/* Copyriht*/
+#copy-area {
+	background-color: #12303D;
+}
+
+#copy-area .container {
+	padding: 10px 0;
+	text-align: center;
+}
+
+#copy-area .container p {
+	margin-bottom: 0;
+    color:#ffffff;
+}
+
+#copy-area .container a {
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#copy-area .container a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+/* Responsividade*/
+@media(max-width: 768px) {
+    /*Geral */
+    .container {
+        padding: 20px 0;
+    }
+    /*Slider*/
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: auto;
+    }
+    
+    #mainSlider .carousel-caption h2 {
+        font-size: 28px;
+    }
+
+    #mainSlider .carousel-caption p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-caption {
+        left: 10%;
+        right: 10%;
+    }
+
+    /* Sobre area*/
+    #about-area img {
+        padding: 10px;
+    }
+}
+
+@media(max-width: 425px){
+
+    /*Slider*/
+    #mainSlider {
+        margin-top: 90px;
+    }
+
+    #mainSlider .carousel-caption {
+        top: 5%
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #mainSlider .carousel-caption p {
+        display: none;
+    }
+
+    .carousel-caption .main-btn {
+        font-size: 14px;
+    }
+
+    /*Sobre*/
+    .main-title {
+        font-size: 30px;
+    }
+
+    #about-area img {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    /*Contato*/
+    .contact-box {
+        border: none;
+        margin-bottom: 0;
+    }
+}
