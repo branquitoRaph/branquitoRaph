@@ -23,7 +23,7 @@
 	<header>
 		<div class = "container" id = "nav-container">
 			<nav class = "navbar navbar-expand-lg fixed-top navbar-dark">
-				<a href = "#" class = "navbar-brand">
+				<a href = "index.html" class = "navbar-brand">
 					<img id = "logo" src = "img/logo-raphael-branco.jpg" alt = "logo-raphael"> Raphael Branco
 				</a>
 				<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbar-links" aria-controls = "navbar-links" aria-expanded = "false" aria-label = "Toggle navigation">
@@ -31,11 +31,11 @@
 				</button>
 				<div class = "collapse navbar-collapse justify-content-end" id = "navbar-links">
 					<div class = "navbar-nav">
-						<a class = "nav-item nav-link" id = "home-menu">Home</a>
-						<a class = "nav-item nav-link" id = "sobre-menu">Sobre</a>
-						<a class = "nav-item nav-link" id = "curriculo-menu">Currículo</a>
-                        <a class = "nav-item nav-link" id = "sobre-menu">Projetos</a>
-						<a class = "nav-item nav-link" id = "contact-menu">Contato</a>
+						<a class = "nav-item nav-link" id = "home-menu" href="#mainSlider">Home</a>
+						<a class = "nav-item nav-link" id = "sobre-menu" href="#about-area">Sobre</a>
+						<a class = "nav-item nav-link" id = "curriculo-menu" href="#services-area">Currículo</a>
+                        <a class = "nav-item nav-link" id = "projetos-menu" href="#projects-area">Projetos</a>
+						<a class = "nav-item nav-link" id = "contact-menu" href="#contact-area">Contato</a>
 					</div>
 				</div>
 			</nav>
@@ -44,8 +44,8 @@
 	</header>
     <main>
         <!-- Carrosel -->
-        <div class="container-fluid">
-            <div id="mainSlider" class="carousel slide" data-ride=" carousel">
+        <section class="container-fluid">
+            <section id="mainSlider" class="carousel slide" data-ride=" carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
                     <li data-target="#mainSlider" data-slide-to="1"></li>
@@ -57,7 +57,7 @@
                         <div class="carousel-caption d-md-block">
                             <h2>Quer conhecer meu currículo?</h2>
                             <p>Sou um desenvolvedor full stack e estou aqui para me apresentar</p>
-                            <a href="#" class="main-btn">Ver currículo</a>
+                            <a href="#services-area" class="main-btn">Ver currículo</a>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -85,9 +85,9 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-            </div>
+            </section>
             <!-- Sobre -->
-			<div id = "about-area">
+			<section id = "about-area">
 				<div class = "container">
 					<div class = "row">
 						<div class = "col-12">
@@ -115,9 +115,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- Currículo-->
-			<div id="services-area">
+			<section id="services-area">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
@@ -146,9 +146,9 @@
 					</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- Projetos -->
-			<div id = "projects-area">
+			<section id = "projects-area">
 				<div class = "container">
 					<div class = "row">
 						<div class = "col-12">
@@ -183,12 +183,12 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
         </div>
     </main>
 	<!-- Rodapé/Contato-->
 	<footer>
-		<div id="contact-area">
+		<section id="contact-area">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -216,9 +216,10 @@
 							<input type = "text" class = "form-control" placeholder =  "Assunto" name="assunto">
 							<textarea class = "form-control" rows = "3" placeholder = "Sua mensagem" name = "mensagem"></textarea>
 							<input type = "submit" class = "main-btn" value = "Enviar" name = "Enviar">
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<div id = "copy-area">
 			<div class = "container">
 				<div class="row">
